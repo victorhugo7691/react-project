@@ -8,6 +8,8 @@ import BomDia from './components/BomDia'
 import Pai from './components/Pai'
 import Descricao from './components/Descricao'
 import Cachorro from './components/Cachorro'
+import Counter from './components/Counter'
+import UserInfoForm from './components/UserInfoForm'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,6 +30,11 @@ function App() {
      {/*Desestruturacao de props {} []*/}
      <Cachorro nome="Dog" raca="Buldog" />
 
+     {/* useState - Estado do componente  - hook*/}
+     <Counter />
+
+     {/*Multiplos estados*/}
+     <UserInfoForm />
 
     </>
    
