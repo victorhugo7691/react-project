@@ -12,6 +12,9 @@ import Counter from './components/Counter'
 import UserInfoForm from './components/UserInfoForm'
 import Button from './components/Button'
 import PaiFunction from './components/PaiFunction'
+import Form from './components/Form'
+import RenderCondicional from './components/RenderCondicional'
+import LoginButton from './components/LoginButton'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -45,6 +48,14 @@ function App() {
      {/* Passando funções de manipulação de eventos como props */}
      <PaiFunction />
 
+     {/*Eventos de form*/}
+     <Form />
+
+     {/*Renderização condicional*/}
+     <RenderCondicional user="Cariani" />
+
+    {/*Expressão ternária*/}
+    <LoginButton loggedIn={false} />
     </>
    
   )
