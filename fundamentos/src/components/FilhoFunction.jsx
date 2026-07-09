@@ -1,7 +1,6 @@
 import React from 'react'
 
-const FilhoFunction = ({ onChildClick }) => 
-    {
+const FilhoFunction = ({ onChildClick }) => {
         return <button onClick={onChildClick}> Botão filho </button>
     }
 

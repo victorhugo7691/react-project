@@ -1,5 +1,5 @@
 function Filho(){
-    return <div>Filho</div>
+    return <span>Filho</span>
 }
 
 export default Filho;

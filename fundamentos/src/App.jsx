@@ -17,7 +17,8 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>{/* Criacao de componente*/}
+    <>
+    {/* Criacao de componente*/}
      <Welcome/>
 
      {/*Expressao jsx*/}

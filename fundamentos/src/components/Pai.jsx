@@ -2,7 +2,7 @@ import Filho from "./Filho";
 
 function Pai(){
     return <div>
-        <p>Pai de <Filho /></p>
+        <p>Pai de <Filho /> </p>
     </div>;
 }
 
