@@ -15,6 +15,7 @@ import PaiFunction from './components/PaiFunction'
 import Form from './components/Form'
 import RenderCondicional from './components/RenderCondicional'
 import LoginButton from './components/LoginButton'
+import Warning from './components/Warning'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -56,8 +57,14 @@ function App() {
 
     {/*Expressão ternária*/}
     <LoginButton loggedIn={false} />
-    </>
-   
+
+    {/*Render nulo*/}
+    <Warning warning = "true"/>
+
+    {/*Listas chaves */}
+    <NumberList numbers = {[1, 2, 3, 4, 5, 6]} />
+
+    </>  
   )
 }
 
