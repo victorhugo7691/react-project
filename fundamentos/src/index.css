@@ -109,3 +109,8 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+.botao-azul{
+    background-color: blue;
+    margin-padding: 10px;
+}

@@ -15,7 +15,7 @@ const BotaoEstilizado = () => {
 
   return (
     <div>
-      <button style ={estiloBotao}>Botão Estilizado</button>
+      <button style = {estiloBotao}>Botão Estilizado</button>
     </div>
   )
 }

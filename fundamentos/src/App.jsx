@@ -18,6 +18,7 @@ import LoginButton from './components/LoginButton'
 import Warning from './components/Warning'
 import NumberList from './components/NumberList'
 import BotaoEstilizado from './components/BotaoEstilizado'
+import BotaoAzul from './components/BotaoAzul'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -70,6 +71,7 @@ function App() {
     <BotaoEstilizado />
 
     {/*Estilos globais*/}
+    <BotaoAzul />
 
     </>  
   )
