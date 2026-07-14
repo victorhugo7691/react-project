@@ -16,6 +16,8 @@ import Form from './components/Form'
 import RenderCondicional from './components/RenderCondicional'
 import LoginButton from './components/LoginButton'
 import Warning from './components/Warning'
+import NumberList from './components/NumberList'
+import BotaoEstilizado from './components/BotaoEstilizado'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -63,6 +65,11 @@ function App() {
 
     {/*Listas chaves */}
     <NumberList numbers = {[1, 2, 3, 4, 5, 6]} />
+    
+    {/*Estilo por atributo*/}
+    <BotaoEstilizado />
+
+    {/*Estilos globais*/}
 
     </>  
   )
