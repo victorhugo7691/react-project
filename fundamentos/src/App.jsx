@@ -19,6 +19,7 @@ import Warning from './components/Warning'
 import NumberList from './components/NumberList'
 import BotaoEstilizado from './components/BotaoEstilizado'
 import BotaoAzul from './components/BotaoAzul'
+import Greeting from './components/Greeting'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -72,6 +73,9 @@ function App() {
 
     {/*Estilos globais*/}
     <BotaoAzul />
+
+    {/*Exercicios*/}
+    <Greeting nome="Joao" />
 
     </>  
   )
