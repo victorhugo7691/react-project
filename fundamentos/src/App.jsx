@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-import Welcome from  './components/Welcome';
+import Welcome from './components/Welcome';
 import BomDia from './components/BomDia'
 import Pai from './components/Pai'
 import Descricao from './components/Descricao'
@@ -20,64 +20,71 @@ import NumberList from './components/NumberList'
 import BotaoEstilizado from './components/BotaoEstilizado'
 import BotaoAzul from './components/BotaoAzul'
 import Greeting from './components/Greeting'
+import PropText from './components/PropText'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    {/* Criacao de componente*/}
-     <Welcome/>
+      {/* Criacao de componente*/}
+      <Welcome />
 
-     {/*Expressao jsx*/}
-     <BomDia/>
+      {/*Expressao jsx*/}
+      <BomDia />
 
-     {/*Componente dentro de componente*/}
-     <Pai />
+      {/*Componente dentro de componente*/}
+      <Pai />
 
-     {/*Props - Variaveis dinamicas*/}
-     <Descricao nome="Ronaldo" idade={22} />
+      {/*Props - Variaveis dinamicas*/}
+      <Descricao nome="Ronaldo" idade={22} />
 
-     {/*Desestruturacao de props {} []*/}
-     <Cachorro nome="Dog" raca="Buldog" />
+      {/*Desestruturacao de props {} []*/}
+      <Cachorro nome="Dog" raca="Buldog" />
 
-     {/* useState - Estado do componente  - hook*/}
-     <Counter />
+      {/* useState - Estado do componente  - hook*/}
+      <Counter />
 
-     {/*Multiplos estados*/}
-     <UserInfoForm />
-     
-     {/*Eventos*/}
-     <Button />
+      {/*Multiplos estados*/}
+      <UserInfoForm />
 
-     {/* Passando funções de manipulação de eventos como props */}
-     <PaiFunction />
+      {/*Eventos*/}
+      <Button />
 
-     {/*Eventos de form*/}
-     <Form />
+      {/* Passando funções de manipulação de eventos como props */}
+      <PaiFunction />
 
-     {/*Renderização condicional*/}
-     <RenderCondicional user="Cariani" />
+      {/*Eventos de form*/}
+      <Form />
 
-    {/*Expressão ternária*/}
-    <LoginButton loggedIn={false} />
+      {/*Renderização condicional*/}
+      <RenderCondicional user="Cariani" />
 
-    {/*Render nulo*/}
-    <Warning warning = "true"/>
+      {/*Expressão ternária*/}
+      <LoginButton loggedIn={false} />
 
-    {/*Listas chaves */}
-    <NumberList numbers = {[1, 2, 3, 4, 5, 6]} />
-    
-    {/*Estilo por atributo*/}
-    <BotaoEstilizado />
+      {/*Render nulo*/}
+      <Warning warning="true" />
 
-    {/*Estilos globais*/}
-    <BotaoAzul />
+      {/*Listas chaves */}
+      <NumberList numbers={[1, 2, 3, 4, 5, 6]} />
 
-    {/*Exercicios*/}
-    <Greeting nome="Joao" />
+      {/*Estilo por atributo*/}
+      <BotaoEstilizado />
 
-    </>  
+      {/*Estilos globais*/}
+      <BotaoAzul />
+
+      {/*Exercicios*/}
+      <Greeting nome="Joao" />
+
+      <PropText prop-text={[
+        { id: 1, descricao: 'Comprar pao' },
+        { id: 2, descricao: 'Escrever codigo' },
+        { id: 3, descricao: 'Comprar o parafuso' }
+      ]} />
+
+    </>
   )
 }
 
