@@ -9,6 +9,7 @@ import { MeuContextoProvider } from './contexts/MeuContexto'
 import ComponenteFilho from './components/ComponenteFilho'
 import ValorDoContexto from './components/ValorDoContexto'
 import Contador from './components/Contador'
+import DisplayWindowsSize from './components/DisplayWindowsSize' 
 
 function App() {
 
@@ -27,6 +28,13 @@ function App() {
 
     {/*UseReducer Estados mais complexos*/}
     <Contador />
+
+    {/*Custom hook para chamada de api*/}
+    <DisplayWindowsSize />
+
+    {/*Slots e children props */}
+
+
     </>
   )
 }
