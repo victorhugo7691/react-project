@@ -9,7 +9,8 @@ import { MeuContextoProvider } from './contexts/MeuContexto'
 import ComponenteFilho from './components/ComponenteFilho'
 import ValorDoContexto from './components/ValorDoContexto'
 import Contador from './components/Contador'
-import DisplayWindowsSize from './components/DisplayWindowsSize' 
+import DisplayWindowSize from './components/DisplayWindowSize'
+import Container from './components/Container'
 
 function App() {
 
@@ -30,9 +31,13 @@ function App() {
     <Contador />
 
     {/*Custom hook para chamada de api*/}
-    <DisplayWindowsSize />
+    <DisplayWindowSize />
 
     {/*Slots e children props */}
+    <Container>
+      <h1>Titulo da secao</h1>
+      <p>Subtítulo </p>
+    </Container>
 
 
     </>
