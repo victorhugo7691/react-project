@@ -11,6 +11,7 @@ import ValorDoContexto from './components/ValorDoContexto'
 import Contador from './components/Contador'
 import DisplayWindowSize from './components/DisplayWindowSize'
 import Container from './components/Container'
+import PerfilDeUsuario from './components/PerfilDeUsuario'
 
 function App() {
 
@@ -38,7 +39,9 @@ function App() {
       <h1>Titulo da secao</h1>
       <p>Subtítulo </p>
     </Container>
-
+    
+    {/*Sincronizar o estado com props*/}
+    <PerfilDeUsuario usuarioId={1} /> 
 
     </>
   )
