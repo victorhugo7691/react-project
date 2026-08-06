@@ -12,6 +12,9 @@ import Contador from './components/Contador'
 import DisplayWindowSize from './components/DisplayWindowSize'
 import Container from './components/Container'
 import PerfilDeUsuario from './components/PerfilDeUsuario'
+import CalculoPesado from './components/CalculoPesado'
+import ContadorCallBack from './components/ContadorCallBack'
+import Exercices from './components/Exercices'
 
 function App() {
 
@@ -42,6 +45,15 @@ function App() {
     
     {/*Sincronizar o estado com props*/}
     <PerfilDeUsuario usuarioId={1} /> 
+
+    {/*useMemo e useCallback*/}
+    <CalculoPesado numero={2}/>
+
+    {/*UseCallback*/}
+    <ContadorCallBack  />
+
+    {/*Exercicios*/}
+    <Exercices />
 
     </>
   )
