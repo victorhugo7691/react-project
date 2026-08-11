@@ -1,8 +1,8 @@
-const Task = () => {
+const Task = ({ task, onRemove }) => {
   return (
     <li>
-      <span>Task 1</span>
-      <button>Remover</button>
+      <span> {task.text}</span>
+      <button onClick={onRemove}>Remover</button>
     </li>
   );
 };
