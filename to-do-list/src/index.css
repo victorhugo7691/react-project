@@ -32,6 +32,10 @@ li {
   align-items: center;
 }
 
+li span {
+  cursor: pointer;
+}
+
 button {
   background-color: #ff4d4d;
   color: white;
@@ -48,7 +52,7 @@ button:hover {
 button[type="submit"] {
   background-color: blue;
 }
+
 button:hover[type="submit"] {
-  background-color: greenls
-  ;
+  background-color: green;
 }
